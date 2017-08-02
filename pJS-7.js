@@ -46,7 +46,12 @@ let todoList = {
 }
 
 let displayTodosButton = document.getElementById('displayTodosButton')
+let displayTodosButton = document.getElementById('toggleAllButton')
 
 displayTodosButton.addEventListener('click', function(){
     todoList.displayTodos()
+})
+
+displayTodosButton.addEventListener('click', function(){
+    todoList.toggleAll()
 })
